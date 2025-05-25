@@ -115,7 +115,7 @@ function showTestNotification() {
 async function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     try {
-      const registration = await navigator.serviceWorker.register('/sw.bundle.js'); // pastikan path benar
+      const registration = await navigator.serviceWorker.register('./sw.bundle.js'); // pastikan path benar
       console.log('Service Worker terdaftar!', registration);
       
       // Wait for service worker to be ready
